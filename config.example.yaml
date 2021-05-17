@@ -1,0 +1,16 @@
+path:
+  - /chia/hpool/hdd1 # mount the path your defined in docker-compose.yaml
+minerName:
+apiKey:
+cachePath: ""
+deviceId: ""
+extraParams: {}
+log:
+  lv: info
+  path: ./log/
+  name: miner.log
+url:
+  info: ""
+  submit: ""
+scanPath: true
+scanMinute: 15

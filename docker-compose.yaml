@@ -1,0 +1,11 @@
+version: '3'
+services:
+  main:
+    build: .
+    container_name: hpool-miner-chia
+    restart: "no"
+    volumes:
+      - ./config.yaml:/chia/hpool/linux/config.yaml:ro
+      - ./log:/chia/hpool/linux/log
+      # mount the HDD volume
+      - /media/peter/hdd1:/chia/hpool/hdd1
